@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>p5.js example</title>
+  <style>
+    body {
+      padding: 0;
+      margin: 0;
+     
+    }
+  </style>
+  <link rel="stylesheet" href="Style.css">
+  <script src="../p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  
+  <script src="Bar.js"></script>
+  <script src="Bars.js"></script>
+  <script src="sketch.js"></script>
+  
+</head>
+
+<body>
+  
+  <main>
+   
+  </main>
+  <input  onclick = "myBars[0].swap(myBars[1]); console.log(myBars);"type="button" value="Swap">
+  <input  onclick =  "myBars[0].update()" value="Update" type="button">
+  
+  <input  onclick =  "console.log(myBars); noLoop();" type="button" value="Stop">
+  <input  onclick =  "console.log(myBars); loop();" type="button" value="Resume">
+</body>
+
+</html>
